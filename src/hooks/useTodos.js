@@ -8,5 +8,5 @@ export const useTodos = (todo) => {
     setTodos(state => [...state, { name: todo, completed: false }]);
   };
 
-  return { todos, handleSubmit };
+  return { todos, handleSubmit, setTodos };
 };

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoItem Component should render a TodoItem 1`] = `
+<Fragment>
+  <h3>
+    Todo: 
+  </h3>
+  <button>
+    Mark Complete
+  </button>
+</Fragment>
+`;
