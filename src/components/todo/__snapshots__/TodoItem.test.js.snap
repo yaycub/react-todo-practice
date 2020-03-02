@@ -8,5 +8,8 @@ exports[`TodoItem Component should render a TodoItem 1`] = `
   <button>
     Mark Complete
   </button>
+  <button>
+    Delete Todo
+  </button>
 </Fragment>
 `;
