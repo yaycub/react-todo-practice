@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TodoItem = ({ name, completed, handleCompleted, handleDelete, styles }) => {
+const TodoItem = ({ name, completed, handleDelete, styles }) => {
 
   return (
     <>
       <h3 className={completed ? styles?.completed : styles?.incomplete}>Todo: {name}</h3>
-      <button onClick={handleCompleted}>{completed ? 'Mark Incomplete' : 'Mark Complete'}</button>
-      <button onClick={handleDelete}>Delete Todo</button>
+      <button onClick={() => handleDelete(name)}>Delete Todo</button>
     </>
   );
 };
@@ -15,11 +14,11 @@ const TodoItem = ({ name, completed, handleCompleted, handleDelete, styles }) =>
 TodoItem.propTypes = {
   name: PropTypes.string.isRequired,
   completed: PropTypes.bool.isRequired,
-  handleCompleted: PropTypes.func.isRequired,
   handleDelete: PropTypes.func.isRequired,
+  index: PropTypes.number.isRequired,
   styles: PropTypes.shape({
-    completed: PropTypes.object,
-    incomplete: PropTypes.object
+    completed: PropTypes.string,
+    incomplete: PropTypes.string
   }).isRequired
 };
 

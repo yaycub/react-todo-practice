@@ -5,10 +5,9 @@ exports[`TodoItem Component should render a TodoItem 1`] = `
   <h3>
     Todo: 
   </h3>
-  <button>
-    Mark Complete
-  </button>
-  <button>
+  <button
+    onClick={[Function]}
+  >
     Delete Todo
   </button>
 </Fragment>

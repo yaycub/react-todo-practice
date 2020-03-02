@@ -1,16 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Form Component should render a form 1`] = `
-<form
-  onSubmit={[Function]}
->
-  <input
-    onChange={[Function]}
-    type="text"
-    value="New Todo"
+<Fragment>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      type="text"
+      value="New Todo"
+    />
+    <button>
+      Create Task
+    </button>
+  </form>
+  <TodoList
+    setTodos={[Function]}
+    todos={Array []}
   />
-  <button>
-    Create Task
-  </button>
-</form>
+</Fragment>
 `;

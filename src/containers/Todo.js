@@ -2,7 +2,9 @@ import React from 'react';
 import Form from '../components/todo/Form';
 
 const Todo = () => (
-  <Form />
+  <>
+    <Form />
+  </>
 );
 
 export default Todo;
